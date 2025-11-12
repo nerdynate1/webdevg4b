@@ -3,6 +3,7 @@
 ---
 ## Nathan valle:
 - Home
+- Contact
 
 ---
 
