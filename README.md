@@ -9,11 +9,13 @@
 ---
 
 ## Erik Fudge:
-
+- Menu
 ---
 
 ## Maddie:
-
+- Shopping Kart and purchase screns
+- FAQ
 ---
 
 ## Abby:
+- About us
