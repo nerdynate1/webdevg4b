@@ -103,7 +103,7 @@ export function Topbar() {
                         aria-hidden
                     />
                     <div
-                        className="fixed inset-y-0 left-0 z-50 w-72 bg-background text-primary-foreground border-r border-sidebar-border shadow-lg">
+                        className="fixed inset-y-0 left-0 z-50 w-72 bg-background text-foreground border-r border-sidebar-border shadow-lg">
                         <div className="flex items-center justify-between px-4 h-14 border-b">
                             <Image
                                 src="/icon.png"
