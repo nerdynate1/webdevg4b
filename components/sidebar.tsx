@@ -60,7 +60,7 @@ export function Sidebar() {
                                         <Link href={l.href} className="flex items-center gap-2">
                                             <Icon className="h-6 w-6 shrink-0" aria-hidden/>
                                             <span
-                                                className={`text-sm ${collapsed ? "sr-only" : "not-sr-only"}`}>{l.label}</span>
+                                                className={`text-current text-sm ${collapsed ? "sr-only" : "not-sr-only"}`}>{l.label}</span>
                                         </Link>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
