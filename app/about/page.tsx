@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl">
@@ -20,6 +22,18 @@ export default function AboutPage() {
             Weddings, corporate events, birthdays, and more — we tailor our menus and services to your occasion and
             preferences, offering tastings, staffing, rentals guidance, and venue coordination.
           </p>
+        </section>
+        <section className="rounded-lg border p-4">
+            <Image
+                 src="/Aboutus.jpg"
+                 alt="About Us"
+                 width="300"
+                 height="300"
+                 className="shrink-0 rounded"
+                 style={{backgroundColor: "transparent"}}/>
+             <div className="w-full">
+                <h3>Our Tea</h3>
+             </div>
         </section>
       </div>
     </div>
