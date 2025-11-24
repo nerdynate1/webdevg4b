@@ -10,6 +10,12 @@ type MenuSection = {
   items: { name: string; price: string }[];
 };
 
+type SpecialItem = {
+  name: string;
+  price: string;
+  description: string;
+};
+
 const sections: MenuSection[] = [
   {
     title: "Single Serve Breakfast Menu",
@@ -121,6 +127,39 @@ const sections: MenuSection[] = [
   },
 ];
 
+const specialOrders: SpecialItem[] = [
+  {
+    name: "Custom Wedding Cake",
+    price: "Starting at $250.00",
+    description:
+      "Multi-tiered custom designed cake for your special day. Call to discuss flavors, design, and serving size.",
+  },
+  {
+    name: "Full Catering Package",
+    price: "Custom pricing",
+    description:
+      "Complete event catering with setup, service staff, and cleanup. Minimum 50 guests. Contact us for a personalized quote.",
+  },
+  {
+    name: "Live Cooking Station",
+    price: "Starting at $500.00",
+    description:
+      "Chef-attended live cooking stations (pasta, carving, sushi, etc.). Available for events with 30+ guests.",
+  },
+  {
+    name: "Premium Bar Service",
+    price: "Starting at $400.00",
+    description:
+      "Professional bartender with full bar setup. Includes glassware, mixers, and garnishes. Alcohol pricing separate.",
+  },
+  {
+    name: "Specialty Dietary Menus",
+    price: "Custom pricing",
+    description:
+      "Custom menus for kosher, halal, vegan, or allergen-free requirements. Advance notice required.",
+  },
+];
+
 export default function MenuPage() {
   const { add, items } = useCart();
   const slug = (s: string) =>
@@ -229,6 +268,48 @@ export default function MenuPage() {
             </ul>
           </div>
         ))}
+      </section>
+
+      <section className="mt-8 rounded-lg border border-primary/20 bg-accent/30 p-4">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h2 className="text-xl font-medium">Special Orders</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              These items require advance planning and cannot be ordered online.
+              Please contact us to discuss your needs.
+            </p>
+          </div>
+        </div>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          {specialOrders.map((item) => (
+            <div
+              key={item.name}
+              className="rounded-lg border bg-card p-4 flex flex-col gap-2"
+            >
+              <div className="font-medium">{item.name}</div>
+              <div className="text-sm text-primary font-medium">
+                {item.price}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {item.description}
+              </p>
+              <div className="mt-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    toast.info("Contact us for this item", {
+                      description:
+                        "Please call or use our contact form to discuss this special order.",
+                    });
+                  }}
+                >
+                  Contact for Details
+                </Button>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
