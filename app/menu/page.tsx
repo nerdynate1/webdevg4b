@@ -25,7 +25,7 @@ const sections: MenuSection[] = [
     ],
   },
   {
-    title: "Single Server Box Lunch",
+    title: "Single Serve Box Lunch",
     items: [
       { name: "Signature sandwiches", price: "18.95" },
       { name: "Cold bistro bowls", price: "19.95" },
