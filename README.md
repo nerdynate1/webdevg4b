@@ -45,7 +45,8 @@ Notes
 - Theme preference and font size are stored in localStorage.
 - If the cart is empty, the Checkout page shows an empty state and hides the payment form.
 
-Our Company - Star Catering:
+
+Our Company: 
 
 -Why we chose Star Catering?
 
