@@ -1,5 +1,29 @@
 import Image from "next/image";
 
+type Member = {
+    name: string;
+    title: string;
+};
+
+const members: Member[] = [
+    {
+        name: "Abbigail Weber",
+        title: "Backend dev"
+    },
+    {
+        name: "Erik Fudge",
+        title: "Frontend dev"
+    },
+    {
+        name: "Nathan Valle",
+        title: "Ui Designer"
+    },
+    {
+        name: "Maddie Ledesma",
+        title: "CFO"
+    }
+];
+
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl">
@@ -23,17 +47,24 @@ export default function AboutPage() {
             preferences, offering tastings, staffing, rentals guidance, and venue coordination.
           </p>
         </section>
-        <section className="rounded-lg border p-4">
+        <section className="rounded-lg border p-4 grid md:grid-cols-2 gap-8 w-full">
             <Image
                  src="/Aboutus.jpg"
                  alt="About Us"
                  width="300"
                  height="300"
-                 className="shrink-0 rounded"
+                 className="shrink-0 rounded "
                  style={{backgroundColor: "transparent"}}/>
-             <div className="w-full">
-                <h3>Our Tea</h3>
+             <div className="w-full flex flex-col">
+                  <h1 className="text-lg font-medium">Our Team</h1>
+                  {members.map((member, index) => (
+                      <div className="w-full grid grid-cols-2 gap-4 p-4 border-b-2">
+                        <div>{member.name}</div>
+                        <div>{member.title}</div>
+                      </div>
+                  ))}
              </div>
+
         </section>
       </div>
     </div>
