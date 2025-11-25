@@ -8,19 +8,19 @@ type Member = {
 const members: Member[] = [
     {
         name: "Abbigail Weber",
-        title: "Backend dev"
+        title: "Digital Prophet"
     },
     {
         name: "Erik Fudge",
-        title: "Frontend dev"
+        title: "Data Guru"
     },
     {
         name: "Nathan Valle",
-        title: "Ui Designer"
+        title: "Full Stack Magician"
     },
     {
         name: "Maddie Ledesma",
-        title: "CFO"
+        title: "CEO"
     }
 ];
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
         </section>
         <section className="rounded-lg border p-4 grid md:grid-cols-2 gap-8 w-full">
             <Image
-                 src="/Aboutus.jpg"
+                 src="/Aboutus.jpeg"
                  alt="About Us"
                  width="300"
                  height="300"
