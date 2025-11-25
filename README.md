@@ -1,3 +1,6 @@
+
+WEBSITE DOMAIN NAME: 
+=====================================
 Star Catering — Next.js + Tailwind app
 =====================================
 
@@ -41,3 +44,13 @@ Notes
 - Payments are simulated. Use any Luhn-valid card number, e.g., 4242 4242 4242 4242, a future expiry (MM/YY), and 3-4 digit CVC.
 - Theme preference and font size are stored in localStorage.
 - If the cart is empty, the Checkout page shows an empty state and hides the payment form.
+
+Our Company - Star Catering:
+
+-Why we chose Star Catering?
+
+We chose the name Star Catering because we believe it represents a certain level of excellence that our company aims to achieve, using a star as symbolism to represent being popular or "famous" for our high quality service and food. It evokes a bright and clean image, reflecting quality. The name Star Catering was also chosen due to a lack of businesses in the area sharing the same or similar title, allowing our company to stand out as unique while also avoiding potential copyright issues. 
+
+We chose the catering industry as the basis for our company because it allowed for a robust implementation of the projects requirements, including checkout and payment features as well as an easily understandable baseline to include information on the company under a variety of different pages. Catering industries are a common yet underlooked part of the everyday world and are used at essentially every event serving food involving a large enough group of people. 
+
+Our startup is special because with web UI implementation it allows for a headache free experience for customers looking to select a catering package by allowing customized ordering directly through the site rather than having to reach out to a company rep to make a selection. It offers a modernized way to select catering for any occasion. 
